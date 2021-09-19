@@ -1,6 +1,6 @@
 <template>
-  <div class="product">
-    <h1>これは成果物のページです</h1>
+  <div class="devRec">
+    <h1>これは開発記録のページです</h1>
   </div>
 </template>
 

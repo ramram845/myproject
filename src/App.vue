@@ -3,11 +3,11 @@
   <div id="app">
 
     <v-app-bar app flat dark dense color="blue darken-1" >
-      <v-app-bar-title style = "min-width:110px;">MyPortfolio</v-app-bar-title>
+      <v-app-bar-title style = "min-width:100px;">MyPortfolio</v-app-bar-title>
 
       <v-tabs
         centered
-        class="ml-n1"
+        class="mr-16"
       >
         <v-tab
           v-for="[link,address] in links"
@@ -61,11 +61,11 @@ export default {
     // HelloWorld
   },
   data: () => ({
-      links: [
-        ['ホーム','/'],
-        ['成果物','/Product'],
-        ['開発記録','/Product'],
-      ],
-    }),
+    links: [
+      ['ホーム','/'],
+      ['成果物','/Product'],
+      ['開発記録','/DevRec'],
+    ],
+  }),
 } 
 </script>
