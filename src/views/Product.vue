@@ -50,7 +50,6 @@ export default {
       this.msg = '入力年数が範囲外です。'
        return ''
       }
-
       this.inputYear = parseInt(this.inputYear)
 
       if(this.inputYear % 400 == 0){
