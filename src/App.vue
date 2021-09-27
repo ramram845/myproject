@@ -1,14 +1,13 @@
 <template>
-<v-app>
+<v-app :style="{ background: $vuetify.theme.themes.light.background }">
   <div id="app">
 
-    <v-app-bar app flat dark dense color="blue darken-1" >
-      <v-app-bar-title style = "min-width:100px;">MyPortfolio</v-app-bar-title>
-
-      <v-tabs
-        centered
-        class="mr-16"
-      >
+    <v-app-bar flat dark dense color="blue darken-1" >
+      <v-app-bar-title style = "min-width:120px;">MyPortfolio</v-app-bar-title>
+    </v-app-bar>
+    
+    <v-toolbar flat dark dense color="blue darken-1">
+      <v-tabs>
         <v-tab
           v-for="[link,address] in links"
           :key="link"
@@ -17,10 +16,12 @@
           {{ link }}
         </v-tab>
       </v-tabs>
-    </v-app-bar>
+    </v-toolbar>
 
     <v-main>
-      <router-view/>
+      <v-container>
+       <router-view/>
+      </v-container>
     </v-main>
 
   </div>
@@ -36,19 +37,6 @@
   color: #2c3e50;
 }
 
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #42b983;
-
-    &.router-link-exact-active {
-      color: #2c3e50;
-    }
-  }
-}
 </style>
 
 <script>
@@ -64,7 +52,7 @@ export default {
     links: [
       ['ホーム','/'],
       ['成果物','/Product'],
-      ['開発記録','/DevRec'],
+      ['開発記録','/DevelopmentRecord'],
     ],
   }),
 } 
