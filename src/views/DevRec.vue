@@ -1,6 +1,10 @@
 <template>
   <div class="devRec" :style="{ background: $vuetify.theme.themes.light.background2 }">
-  <v-expansion-panels multiple class="ma-2">
+  <v-sheet rounded elevation="3" class="pa-4 my-2">
+    ソースコードはgithubで公開されています。
+    <a href = https://github.com/ramram845/myproject>https://github.com/ramram845/myproject</a>
+  </v-sheet>
+  <v-expansion-panels multiple class="pt-4">
 
     <v-expansion-panel>
       <v-expansion-panel-header color="blue darken-1" class="white--text">
@@ -13,6 +17,7 @@
         ２：仮想環境を構築<br>
         ３：Vueのみでサイトを作成<br>
         ４：AWSとVueでサイトを公開<br>
+        ５：githubとAWSを連携<br>
         の順になります。<br>
         まずAWSの公式サイトでVue抜きの知識を得ました。<br>
         <a href = "https://aws.amazon.com/jp/getting-started/hands-on/build-web-app-s3-lambda-api-gateway-dynamodb/?e=gs2020&p=fullstack">
@@ -30,6 +35,7 @@
         vue.config.jsを作成し相対パスを設定しなければ上手くビルドできません。<br>
         以上のパッケージでローカルでサイトを作成することができます。<br>
         あとはビルドしたフォルダをAWSに上げてサイトを公開することができます。<br>
+        また、ソースコードを公開するためにgithubとAWSを連携しました。
       </v-expansion-panel-content>
     </v-expansion-panel>
 
